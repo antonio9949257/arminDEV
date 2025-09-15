@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADAMDEV - Proyectos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body class="min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-custom-dark border-b border-gray-700 sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center">
+                    <a class="flex items-center" href="index.html">
+                        <div class="bg-white p-2 rounded-full mr-2">
+                            <i class="fas fa-code text-black text-lg"></i>
+                        </div>
+                        <span class="font-bold text-xl text-white">ADAMDEV</span>
+                    </a>
+                    <div class="flex items-center ml-4">
+                        <i class="fab fa-windows text-white text-3xl mx-2"></i>
+                        <i class="fab fa-linux text-white text-3xl mx-2"></i>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center">
+                    <ul class="flex items-center ml-4 space-x-4">
+                        <li><a class="text-white hover:text-blue-400" href="index.html">Inicio</a></li>
+                    </ul>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <span class="text-2xl">&#9776;</span>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden">
+                <ul class="flex flex-col space-y-2 mt-2">
+                    <li><a class="text-white hover:text-blue-400" href="index.html">Inicio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-custom-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-white text-center mb-3">Mis <span class="text-info">Proyectos</span></h2>
+            <p class="text-gray-400 text-center max-w-xl mx-auto mb-12">
+                Aquí hay algunos de mis proyectos. Todos están disponibles en mi GitHub.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-custom-card rounded-lg h-full flex flex-col project-card">
+                    <img src="src/demo1.png" class="card-img-top rounded-t-lg" alt="Project 1">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg text-white">Sistema de Tareas</h3>
+                            <span class="px-2 py-1 text-sm rounded bg-blue-600 text-white">Full Stack</span>
+                        </div>
+                        <p class="text-gray-400">Aplicación Full Stack para gestionar tareas , panel dinámico y almacenamiento en MongoDB.</p>
+                        <div class="mt-auto pt-4">
+                            <span class="skill-badge">HTML5</span> <span class="skill-badge">Node.js</span>
+                            <span class="skill-badge">MongoDB</span>
+                            <a href="https://github.com/antonio9949257/prueba-manejadortareas" class="text-info float-right"><i class="fab fa-github"></i> Ver código</a>
+                            <a href="#" class="text-info float-right mr-4"><i class="fas fa-file-alt"></i> Documentación</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-custom-card rounded-lg h-full flex flex-col project-card">
+                    <img src="src/demo2.jpg" class="card-img-top rounded-t-lg" alt="Project 2">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg text-white">Tienda Virtual</h3>
+                            <span class="px-2 py-1 text-sm rounded bg-green-500 text-white">Frontend</span>
+                        </div>
+                        <p class="text-gray-400">Interfaz interactiva para ventas online de productos de seguridad, con organización por categorías, integración de Firebase.</p>
+                        <div class="mt-auto pt-4">
+                            <span class="skill-badge">HTML5</span> <span class="skill-badge">Firebase</span>
+                            <span class="skill-badge">Tailwind</span>
+                            <a href="https://github.com/antonio9949257/SegtecOCL" class="text-info float-right"><i class="fab fa-github"></i> Ver código</a>
+                            <a href="#" class="text-info float-right mr-4"><i class="fas fa-file-alt"></i> Documentación</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-custom-card rounded-lg h-full flex flex-col project-card">
+                    <img src="src/demo3.jpg" class="card-img-top rounded-t-lg" alt="Project 3">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg text-white">Sistema de Ventas</h3>
+                            <span class="px-2 py-1 text-sm rounded bg-purple text-white">Backend</span>
+                        </div>
+                        <p class="text-gray-400">Backend robusto para una tienda virtual con control de inventario, procesamiento de pedidos y generación de reportes mediante gráficos estadísticos.</p>
+                        <div class="mt-auto pt-4">
+                            <span class="skill-badge">Node.js</span> <span class="skill-badge">Express</span>
+                            <span class="skill-badge">MySQL</span>
+                            <a href="https://github.com/antonio9949257/SegteOSV" class="text-info float-right"><i class="fab fa-github"></i> Ver código</a>
+                            <a href="#" class="text-info float-right mr-4"><i class="fas fa-file-alt"></i> Documentación</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-custom-card rounded-lg h-full flex flex-col project-card">
+                    <img src="src/Untitled.png" class="card-img-top rounded-t-lg" alt="Project 4">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg text-white">Proyecto 4</h3>
+                            <span class="px-2 py-1 text-sm rounded bg-red-500 text-white">Mobile</span>
+                        </div>
+                        <p class="text-gray-400">Descripción del proyecto 4.</p>
+                        <div class="mt-auto pt-4">
+                            <span class="skill-badge">React Native</span> <span class="skill-badge">Firebase</span>
+                            <a href="#" class="text-info float-right"><i class="fab fa-github"></i> Ver código</a>
+                            <a href="#" class="text-info float-right mr-4"><i class="fas fa-file-alt"></i> Documentación</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-custom-card rounded-lg h-full flex flex-col project-card">
+                    <img src="src/Untitled.png" class="card-img-top rounded-t-lg" alt="Project 5">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg text-white">Proyecto 5</h3>
+                            <span class="px-2 py-1 text-sm rounded bg-yellow-500 text-white">Full Stack</span>
+                        </div>
+                        <p class="text-gray-400">Descripción del proyecto 5.</p>
+                        <div class="mt-auto pt-4">
+                            <span class="skill-badge">Angular</span> <span class="skill-badge">.NET</span>
+                            <a href="#" class="text-info float-right"><i class="fab fa-github"></i> Ver código</a>
+                            <a href="#" class="text-info float-right mr-4"><i class="fas fa-file-alt"></i> Documentación</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-custom-card rounded-lg h-full flex flex-col project-card">
+                    <img src="src/Untitled.png" class="card-img-top rounded-t-lg" alt="Project 6">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg text-white">Proyecto 6</h3>
+                            <span class="px-2 py-1 text-sm rounded bg-indigo-500 text-white">AI</span>
+                        </div>
+                        <p class="text-gray-400">Descripción del proyecto 6.</p>
+                        <div class="mt-auto pt-4">
+                            <span class="skill-badge">Python</span> <span class="skill-badge">TensorFlow</span>
+                            <a href="#" class="text-info float-right"><i class="fab fa-github"></i> Ver código</a>
+                            <a href="#" class="text-info float-right mr-4"><i class="fas fa-file-alt"></i> Documentación</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="projects.html" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-lg mr-3">Ver más proyectos</a>
+                <a href="https://github.com/antonio9949257" target="_blank" class="border border-blue-400 text-blue-400 font-bold py-3 px-6 rounded-lg hover:bg-blue-400 hover:text-white">Ver más en GitHub</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-custom-dark border-t border-gray-700 py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <a class="flex items-center" href="index.html">
+                    <div class="bg-white p-2 rounded-full mr-2">
+                        <i class="fas fa-code text-black text-lg"></i>
+                    </div>
+                    <span class="font-bold text-xl text-white">ADAMDEV</span>
+                </a>
+                <div class="text-gray-400 text-center mt-4 md:mt-0">
+                    <p>&copy; 2025 Armin Daniel Antonio Mendieta. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/main.js"></script>
+</body>
+
+</html>

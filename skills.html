@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADAMDEV - Habilidades</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body class="min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-custom-dark border-b border-gray-700 sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center">
+                    <a class="flex items-center" href="index.html">
+                        <div class="bg-white p-2 rounded-full mr-2">
+                            <i class="fas fa-code text-black text-lg"></i>
+                        </div>
+                        <span class="font-bold text-xl text-white">ADAMDEV</span>
+                    </a>
+                    <div class="flex items-center ml-4">
+                        <i class="fab fa-windows text-white text-3xl mx-2"></i>
+                        <i class="fab fa-linux text-white text-3xl mx-2"></i>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center">
+                    <ul class="flex items-center ml-4 space-x-4">
+                        <li><a class="text-white hover:text-blue-400" href="index.html">Inicio</a></li>
+                    </ul>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <span class="text-2xl">&#9776;</span>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden">
+                <ul class="flex flex-col space-y-2 mt-2">
+                    <li><a class="text-white hover:text-blue-400" href="index.html">Inicio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="py-16 bg-custom-card">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Habilidades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-900 p-2 rounded-full mr-4"><i data-feather="code" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">HTML5</h3>
+                    </div>
+                    <p class="text-secondary">Lenguaje de marcado para la creación de páginas web.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Frontend</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="pen-tool" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">CSS3</h3>
+                    </div>
+                    <p class="text-secondary">Hojas de estilo para diseñar y dar formato a páginas web.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Frontend</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-900 p-2 rounded-full mr-4"><i data-feather="code" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">JavaScript</h3>
+                    </div>
+                    <p class="text-secondary">Lenguaje de programación para la interactividad del lado del cliente.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Frontend</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-900 p-2 rounded-full mr-4"><i data-feather="layout" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Bootstrap</h3>
+                    </div>
+                    <p class="text-secondary">Framework CSS para desarrollo de interfaces responsivas.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Frontend</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="code" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">React</h3>
+                    </div>
+                    <p class="text-secondary">Biblioteca de JavaScript para construir interfaces de usuario.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Frontend</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-900 p-2 rounded-full mr-4"><i data-feather="server" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Node.js</h3>
+                    </div>
+                    <p class="text-secondary">Entorno de ejecución de JavaScript del lado del servidor.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Backend</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-900 p-2 rounded-full mr-4"><i data-feather="server" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Express</h3>
+                    </div>
+                    <p class="text-secondary">Framework para Node.js para la creación de APIs y aplicaciones web.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Backend</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-900 p-2 rounded-full mr-4"><i data-feather="coffee" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Java</h3>
+                    </div>
+                    <p class="text-secondary">Lenguaje de programación robusto y de propósito general.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Backend</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="send" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Go</h3>
+                    </div>
+                    <p class="text-secondary">Lenguaje de programación concurrente y compilado.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Backend</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-900 p-2 rounded-full mr-4"><i data-feather="code" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">C</h3>
+                    </div>
+                    <p class="text-secondary">Lenguaje de programación de bajo nivel para sistemas.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Backend</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-900 p-2 rounded-full mr-4"><i data-feather="code" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">.NET</h3>
+                    </div>
+                    <p class="text-secondary">Framework de Microsoft para desarrollo de aplicaciones.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Backend</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-900 p-2 rounded-full mr-4"><i data-feather="code" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">PHP</h3>
+                    </div>
+                    <p class="text-secondary">Lenguaje de scripting del lado del servidor para desarrollo web.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Backend</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-900 p-2 rounded-full mr-4"><i data-feather="code" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Laravel</h3>
+                    </div>
+                    <p class="text-secondary">Framework de PHP para desarrollo de aplicaciones web modernas.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Backend</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="database" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">MySQL</h3>
+                    </div>
+                    <p class="text-secondary">Sistema de gestión de bases de datos relacional.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Bases de Datos</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-900 p-2 rounded-full mr-4"><i data-feather="database" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">MongoDB</h3>
+                    </div>
+                    <p class="text-secondary">Base de datos NoSQL orientada a documentos.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Bases de Datos</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="database" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">SQLite</h3>
+                    </div>
+                    <p class="text-secondary">Motor de base de datos SQL ligero y sin servidor.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Bases de Datos</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-900 p-2 rounded-full mr-4"><i data-feather="smartphone" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Android Studio</h3>
+                    </div>
+                    <p class="text-secondary">IDE oficial para el desarrollo de aplicaciones Android.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Mobile</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="smartphone" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">React Native</h3>
+                    </div>
+                    <p class="text-secondary">Framework para crear aplicaciones móviles nativas con React.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Mobile</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-900 p-2 rounded-full mr-4"><i data-feather="smartphone" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Expo</h3>
+                    </div>
+                    <p class="text-secondary">Plataforma para facilitar el desarrollo de aplicaciones con React Native.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Mobile</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="smartphone" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Flutter</h3>
+                    </div>
+                    <p class="text-secondary">UI toolkit de Google para crear aplicaciones compiladas nativamente.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Mobile</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-900 p-2 rounded-full mr-4"><i data-feather="git-branch" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Git</h3>
+                    </div>
+                    <p class="text-secondary">Sistema de control de versiones distribuido.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Herramientas</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-900 p-2 rounded-full mr-4"><i data-feather="github" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">GitHub</h3>
+                    </div>
+                    <p class="text-secondary">Plataforma de alojamiento de código para control de versiones con Git.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Herramientas</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="package" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Docker</h3>
+                    </div>
+                    <p class="text-secondary">Plataforma para desarrollar, enviar y ejecutar aplicaciones en contenedores.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Herramientas</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-900 p-2 rounded-full mr-4"><i data-feather="send" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Postman</h3>
+                    </div>
+                    <p class="text-secondary">Plataforma de colaboración para el desarrollo de API.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Herramientas</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-900 p-2 rounded-full mr-4"><i data-feather="terminal" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Terminal</h3>
+                    </div>
+                    <p class="text-secondary">Interfaz de línea de comandos para interactuar con el sistema operativo.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Herramientas</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-900 p-2 rounded-full mr-4"><i data-feather="code" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Visual Studio</h3>
+                    </div>
+                    <p class="text-secondary">Entorno de desarrollo integrado de Microsoft.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Herramientas</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-teal-900 p-2 rounded-full mr-4"><i data-feather="cpu" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Arduino</h3>
+                    </div>
+                    <p class="text-secondary">Plataforma de hardware y software de código abierto.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Hardware</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-900 p-2 rounded-full mr-4"><i data-feather="cpu" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">ESP32</h3>
+                    </div>
+                    <p class="text-secondary">Microcontrolador de bajo costo con Wi-Fi y Bluetooth.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Hardware</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-900 p-2 rounded-full mr-4"><i data-feather="cpu" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">PLC</h3>
+                    </div>
+                    <p class="text-secondary">Controlador Lógico Programable para automatización industrial.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Hardware</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="sliders" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Variadores de frecuencia</h3>
+                    </div>
+                    <p class="text-secondary">Dispositivos para controlar la velocidad de motores de corriente alterna.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Hardware</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-900 p-2 rounded-full mr-4"><i data-feather="edit" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">AutoCAD</h3>
+                    </div>
+                    <p class="text-secondary">Software de diseño asistido por computadora para dibujo 2D y 3D.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Diseño</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-900 p-2 rounded-full mr-4"><i data-feather="edit" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">FreeCAD</h3>
+                    </div>
+                    <p class="text-secondary">Modelador 3D paramétrico de código abierto.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Diseño</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="edit" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">SketchUp</h3>
+                    </div>
+                    <p class="text-secondary">Programa de modelado 3D para una amplia gama de aplicaciones.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Diseño</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="share-2" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">TCP/IP</h3>
+                    </div>
+                    <p class="text-secondary">Conjunto de protocolos de comunicación para redes.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Redes</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-900 p-2 rounded-full mr-4"><i data-feather="share-2" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">DNS</h3>
+                    </div>
+                    <p class="text-secondary">Sistema de Nombres de Dominio para traducir nombres de dominio a IPs.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Redes</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-900 p-2 rounded-full mr-4"><i data-feather="share-2" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">DHCP</h3>
+                    </div>
+                    <p class="text-secondary">Protocolo de configuración dinámica de host.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Redes</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-900 p-2 rounded-full mr-4"><i data-feather="lock" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">HTTP/HTTPS</h3>
+                    </div>
+                    <p class="text-secondary">Protocolo de transferencia de hipertexto para la comunicación en la web.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Redes</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-900 p-2 rounded-full mr-4"><i data-feather="box" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">ARCore</h3>
+                    </div>
+                    <p class="text-secondary">Plataforma de Google para crear experiencias de realidad aumentada.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Realidad Aumentada</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="box" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">ARKit</h3>
+                    </div>
+                    <p class="text-secondary">Framework de Apple para crear experiencias de realidad aumentada.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Realidad Aumentada</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-900 p-2 rounded-full mr-4"><i data-feather="box" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Vuforia</h3>
+                    </div>
+                    <p class="text-secondary">Plataforma de realidad aumentada para el desarrollo de aplicaciones.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Realidad Aumentada</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-900 p-2 rounded-full mr-4"><i data-feather="box" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Unity</h3>
+                    </div>
+                    <p class="text-secondary">Motor de desarrollo de videojuegos para crear experiencias 2D y 3D.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Realidad Aumentada</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="cpu" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Machine Learning</h3>
+                    </div>
+                    <p class="text-secondary">Campo de la inteligencia artificial para el aprendizaje automático.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Inteligencia Artificial</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-900 p-2 rounded-full mr-4"><i data-feather="cpu" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Deep Learning</h3>
+                    </div>
+                    <p class="text-secondary">Subcampo del machine learning basado en redes neuronales.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Inteligencia Artificial</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-900 p-2 rounded-full mr-4"><i data-feather="cpu" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">TensorFlow</h3>
+                    </div>
+                    <p class="text-secondary">Biblioteca de código abierto para machine learning.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Inteligencia Artificial</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-900 p-2 rounded-full mr-4"><i data-feather="cpu" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">PyTorch</h3>
+                    </div>
+                    <p class="text-secondary">Framework de machine learning de código abierto.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Inteligencia Artificial</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-900 p-2 rounded-full mr-4"><i data-feather="cloud" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">AWS</h3>
+                    </div>
+                    <p class="text-secondary">Plataforma de servicios de computación en la nube de Amazon.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Cloud Computing</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="cloud" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Azure</h3>
+                    </div>
+                    <p class="text-secondary">Plataforma de computación en la nube de Microsoft.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Cloud Computing</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-900 p-2 rounded-full mr-4"><i data-feather="cloud" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Google Cloud</h3>
+                    </div>
+                    <p class="text-secondary">Plataforma de computación en la nube de Google.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Cloud Computing</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="move" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">ROS</h3>
+                    </div>
+                    <p class="text-secondary">Robot Operating System para el desarrollo de software de robots.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Robotica</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="code" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">C++</h3>
+                    </div>
+                    <p class="text-secondary">Lenguaje de programación para sistemas y aplicaciones de alto rendimiento.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Robotica</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-900 p-2 rounded-full mr-4"><i data-feather="code" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Python</h3>
+                    </div>
+                    <p class="text-secondary">Lenguaje de programación versátil para diversas aplicaciones.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Robotica</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-900 p-2 rounded-full mr-4"><i data-feather="bar-chart-2" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Matlab</h3>
+                    </div>
+                    <p class="text-secondary">Entorno de computación numérica y lenguaje de programación.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Robotica</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-900 p-2 rounded-full mr-4"><i data-feather="hard-drive" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Rocky</h3>
+                    </div>
+                    <p class="text-secondary">Distribución de Linux compatible con Red Hat Enterprise Linux.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Sistemas Operativos</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-900 p-2 rounded-full mr-4"><i data-feather="hard-drive" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Ubuntu</h3>
+                    </div>
+                    <p class="text-secondary">Distribución de Linux basada en Debian.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Sistemas Operativos</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-900 p-2 rounded-full mr-4"><i data-feather="share-2" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">RESTful APIs</h3>
+                    </div>
+                    <p class="text-secondary">Diseño de APIs para la comunicación entre sistemas.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Otras habilidades</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-900 p-2 rounded-full mr-4"><i data-feather="share-2" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">GraphQL</h3>
+                    </div>
+                    <p class="text-secondary">Lenguaje de consulta para APIs.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Otras habilidades</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-900 p-2 rounded-full mr-4"><i data-feather="check-circle" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Pruebas</h3>
+                    </div>
+                    <p class="text-secondary">Verificación y validación de software.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Otras habilidades</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="refresh-cw" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Integracion continua</h3>
+                    </div>
+                    <p class="text-secondary">Práctica de fusionar cambios de código de forma automática.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Otras habilidades</span></div>
+                </div>
+                
+                <div class="bg-custom-dark p-6 rounded-lg border border-custom">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-900 p-2 rounded-full mr-4"><i data-feather="chevrons-right" class="text-info"></i></div>
+                        <h3 class="text-xl font-semibold">Despliegue continuo</h3>
+                    </div>
+                    <p class="text-secondary">Práctica de liberar software de forma automática.</p>
+                    <div class="mt-4"><span class="skill-badge inline-block px-3 py-1 rounded-full border text-sm">Otras habilidades</span></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-custom-dark border-t border-gray-700 py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <a class="flex items-center" href="index.html">
+                    <div class="bg-white p-2 rounded-full mr-2">
+                        <i class="fas fa-code text-black text-lg"></i>
+                    </div>
+                    <span class="font-bold text-xl text-white">ADAMDEV</span>
+                </a>
+                <div class="text-gray-400 text-center mt-4 md:mt-0">
+                    <p>&copy; 2025 Armin Daniel Antonio Mendieta. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/main.js"></script>
+</body>
+</html>
